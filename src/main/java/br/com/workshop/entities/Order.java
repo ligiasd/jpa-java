@@ -1,5 +1,6 @@
 package br.com.workshop.entities;
 
+import br.com.workshop.entities.enums.OrderStatus;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import javax.persistence.*;
@@ -23,12 +24,15 @@ public class Order implements Serializable {
     @JoinColumn(name = "client_id")
     private User client;
 
+    private Integer orderStatus;
+
     public Order() {
     }
 
-    public Order(Long id, Instant moment, User client) {
+    public Order(Long id, Instant moment, OrderStatus orderStatus, User client) {
         this.id = id;
         this.moment = moment;
+        setOrderStatus(orderStatus);
         this.client = client;
     }
 
@@ -76,5 +80,13 @@ public class Order implements Serializable {
                 ", moment=" + moment +
                 ", client=" + client +
                 '}';
+    }
+
+    public Integer getOrderStatus() {
+        return orderStatus;
+    }
+
+    public void setOrderStatus(OrderStatus orderStatus) {
+        this.orderStatus = orderStatus;
     }
 }
