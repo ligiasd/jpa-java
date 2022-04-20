@@ -2,11 +2,14 @@ package br.com.workshop.services;
 
 import br.com.workshop.entities.Product;
 import br.com.workshop.repositories.ProductRepository;
+import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 import java.util.Optional;
 
+
+@Service
 public class ProductService {
 
     @Autowired
