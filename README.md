@@ -23,6 +23,6 @@ application-test.properties
 Entity: JPA mapping
 
 - Postgres database, Prod profile, JPA
-- Heroku Deploy 
-- application.properties  
-- application-prod.properties 
+Heroku Deploy 
+application.properties  
+application-prod.properties 
