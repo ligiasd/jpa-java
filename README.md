@@ -26,3 +26,14 @@ Entity: JPA mapping
 Heroku Deploy  
 application.properties  
 application-prod.properties   
+
+- API Heroku https://workshop-sb.herokuapp.com/
+endpoints(crud): /users, /categories, /orders, /products
+body to Postman test:
+/users(post)  
+{  
+ "name": "Lidi Brown",  
+ "email": "lidi@gmail.com",  
+ "phone": "977557755",  
+ "password": "123456"  
+}  
