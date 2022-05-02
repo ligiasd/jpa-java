@@ -20,4 +20,9 @@ Serializable
 JPA & H2 dependencies  
 application.properties  
 application-test.properties  
-Entity: JPA mapping  
+Entity: JPA mapping
+
+- Postgres database, Prod profile, JPA  
+Heroku Deploy  
+application.properties  
+application-prod.properties   
